@@ -37,7 +37,7 @@ A2 - GPIO28
 A3 - GPIO29  
 
 ## Directory structure
-code.py/
+code.py/  
 README.md
 
 ## Assembly instructions
