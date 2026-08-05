@@ -60,12 +60,12 @@ README.md
 5. Drag the provided "code.py" file into the "CIRCUITPY" disk and REPLACE the existing code.py file
 
 ## Default keymap(m=mechanical switch, a=analog/magnetic/hall effect switches)
-M1 - a
-M2 - b
-M3 - c
-A1 - a
-A2 - z
-A3 - x
+M1 - a  
+M2 - b  
+M3 - c  
+A1 - a  
+A2 - z  
+A3 - x   
 
 ## Programming and customization guide
 
