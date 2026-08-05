@@ -1,5 +1,5 @@
 #replace the codee.py file in the "CIRCUITPY" directory with this!
-#make sure to instal; adafruit_hid and kmk librarie
+#make sure to install "adafruit_hid" and "kmk" libraries!
 import time
 import board
 import analogio
