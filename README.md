@@ -27,8 +27,8 @@ This is a 6 key macro pad with 6 programmable keys, 3 being hotswap mechanical s
 - code.py, built using CircuitPython and KMK
 
 ## Pinout(PCB - RP2040-Zero)
-VCC - 5V
-GND - GND
+VCC - 5V 
+GND - GND  
 D1 - GPIO00
 D2 - GPIO01
 D3 - GPIO02
