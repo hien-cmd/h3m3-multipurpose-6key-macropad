@@ -12,11 +12,10 @@ This is a 6 key macro pad with 6 programmable keys, 3 being hotswap mechanical s
 - Waveshare RP2040-Zero
 - 3x mechanical switches(can be 5 pin or 3 pin, I personally used gateron milky yellows in my prototype)
 - 3x magnetic switches(i personally use gateron jade ultras in my prototype)
-- Surface-mount hotswap sockets or mill-max sockets
+- Surface-mount hotswap sockets or mill-max sockets(PCB currently only support Kailh hotswap surface mount sockets and mill max)
 - 3x Hall Effect sesnors 
-- Custom PCB(Coming soon!)
+- Custom PCB(Version one UPLOADED!)
 - 3D printed case
-- Solid core or very thick copper wires
 
 ## Tools needed
 - Soldering iron and a bit of solder
@@ -27,27 +26,36 @@ This is a 6 key macro pad with 6 programmable keys, 3 being hotswap mechanical s
 - code.py, built using CircuitPython and KMK
 
 ## Pinout(PCB - RP2040-Zero)
-VCC - 5V  
-GND - GND  
-D1 - GPIO00  
-D2 - GPIO01  
-D3 - GPIO02  
-A1 - GPIO27  
-A2 - GPIO28  
-A3 - GPIO29  
+VCC - 5V
+GND - GND
+D1 - GPIO00
+D2 - GPIO01
+D3 - GPIO02
+A1 - GPIO27
+A2 - GPIO28
+A3 - GPIO29
 
 ## Directory structure
-code.py/  
-README.md
+LICENSE(License file)
+README.md(README file)
+code.py(code)
+h3m3-case.stl(3d printable case file)
+h3m3-pcb.zip(PCB file)
+h3m3.kicad_sch(Schematic file for PCB)
+
+## Prerequisites
+-Has all the hardware needed
+-Has the 3d printed case and the PCB
 
 ## Assembly instructions
 1. Solder hotswap sockets onto pcb
-2. Solder copper wires from RP2040-Zero to PCB based on pinout
-3. Solder in Hall Effect sensors
+2. Solder RP2040-Zero headers in if you haven't yet, then solder RP2040-ZERO to the BOTTOM SIDE of the PCB(yes, I know it sounds wrong, but I designed it that way, the top right PCB hole from the front view of the PCB should be 5V)
+3. Solder in Hall Effect sensors so it sits on the holes in each magnetic switch slot on the PCB
 4. Put the PCB into the case
 5. Fit the 3 mechanical switches through the casing and fit the pins into the hotswap sockets, so the PCB sits where it should be
 6. Glue the PCB onto the case
-7. Glue RP2040-Zero to the marked square on the case lid
+7. Glue bottom casing with the body.
+
 
 ## Firmware installation
 1. Install CircuitPython on the RP2040-Zero:
@@ -60,12 +68,12 @@ README.md
 5. Drag the provided "code.py" file into the "CIRCUITPY" disk and REPLACE the existing code.py file
 
 ## Default keymap(m=mechanical switch, a=analog/magnetic/hall effect switches)
-M1 - a  
-M2 - b  
-M3 - c  
-A1 - a  
-A2 - z  
-A3 - x   
+M1 - a
+M2 - b
+M3 - c
+A1 - a
+A2 - z
+A3 - x
 
 ## Programming and customization guide
 
