@@ -66,6 +66,7 @@ h3m3.kicad_sch(Schematic file for PCB)
 3. Download the full kmk library here: https://github.com/KMKfw/kmk_firmware
 4. Drag ONLY the "adafruit_hid" and "kmk" folders inside their corresponding folders and put it in the "lib" folder in the "CIRCUITPY" disk
 5. Drag the provided "code.py" file into the "CIRCUITPY" disk and REPLACE the existing code.py file
+6. Drag the config.json file into the "CIRCUITPY" disk
 
 ## Default keymap(m=mechanical switch, a=analog/magnetic/hall effect switches)
 M1 - a
