@@ -1,0 +1,13 @@
+{
+    "mechanical_keys": ["RIGHT", "DOWN", "LEFT"], 
+    "hall_effect": {
+        "GP27": {"key": "A", "actuation": 0.00},
+        "GP28": {"key": "B", "actuation": 0.00},
+        "GP29": {"key": "C", "actuation": 0.00}
+    },
+    "other_settings": {
+        "reject_val": 1.5,
+        "debounce": 0.1,
+        "confirm_samples": 2
+    }
+}
