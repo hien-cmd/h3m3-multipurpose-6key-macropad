@@ -4,7 +4,7 @@ This is a 6 key macro pad with 6 programmable keys, 3 being hotswap mechanical s
 ## Features
 - 3 hotswap mechanical switches
 - 3 interchangable magnetic switches
-- Fully programmable keys and firmware
+- Fully programmable keys and firmware(now can all be modified in a config.json file!)
 - Small form factor
 - Open source hardware and firmware
 
@@ -94,7 +94,7 @@ These are printed messages in the code that prints all of it's voltage readings 
 
 ### Mechanical switches properties
 keyboard.matrix:
-    - pins: this defiens the pins where the mechanical switches are placed, can be changed at line 96
+    - pins: this defines the pins where the mechanical switches are placed, can be changed at line 96
     - value_when_pressed: this is the value when the key is pressed. It is determined by the microcontroller's pull up resistor, which registers a constant HIGH/True(3.3V) until the mechanical switch is pressed and join the pin with GND, which pulls it down to Low/False(0V). This can be changed(but in most cases don't) at line 97
 keyboard.keymap: this defines what is typed when a keystroke is registered, can be changed at line 100
 
