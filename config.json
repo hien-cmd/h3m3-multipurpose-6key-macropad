@@ -1,19 +1,19 @@
 {
-  "mechanical_keys": ["A", "F", "C"],
+  "mechanical_keys": ["A", "B", "C"],
 
   "hall_effect": {
     "GP27": {
       "key": "Z",
-      "actuation_depth": 0.10
+      "actuation_depth": 0.08
     },
     "GP28": {
       "key": "X",
-      "actuation_depth": 0.15,
+      "actuation_depth": 0.10,
       "hysteresis": 0.06
     },
     "GP29": {
       "key": "C",
-      "actuation_depth": 0.22,
+      "actuation_depth": 0.3,
       "rt_press_delta": 0.04,
       "rt_release_delta": 0.04
     }
@@ -29,6 +29,6 @@
     "rt_press_delta": 0.03,
     "rt_release_delta": 0.03,
     "filter_strength": 2,
-    "reject_v": 1.00
+    "reject_v": 0.05
   }
 }
