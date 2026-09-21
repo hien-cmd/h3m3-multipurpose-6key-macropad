@@ -112,7 +112,10 @@ As mentioned in the properties list, rapid trigger and more advanced functions n
 2. Open a serial monitor such as Thonny or Terminal(I personally use Terminal's built-in screen function) at baud 115200
 3. Note the resting value of each switch at boot
 4. One by one press each magnetic switch and note the voltage when it is pressed.
-5. The difference between the resting voltage and the one where it's fully pressed is its full travel. A good "actuation_depth" value for each switch is about a third to half of that value, adjust to however you want it
+5. The difference between the resting voltage and the one where it's fully pressed is its full travel. A good "actuation_depth" value for each switch is about a third to half of that value, adjust to however you want it. Here's some reference ranges:
+- Small actuation_depth (0.05 to 0.10) meaning the key fires almost immediately, barely touching it.
+- Medium (0.15), about halfway down, good middle ground.
+- Large (0.25 and up) needs deliberate, deeper presses. 
 6. If the switches starts pressing on it's own, raise its "hysteresis" property value or the "filter_strength"(board-wide change though)
 7. Set "debug" back to false once you're done
 
