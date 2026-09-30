@@ -129,7 +129,7 @@ keyboard.matrix:
 keyboard.keymap: this defines what is typed when a keystroke is registered, can be changed at line 100
 
 ## AI usage in this project
-Only some parts of the code was written by AI and the PCB, 3d printable case is completely hand designed by me. All code is reviewed and modified by me.
+Only some parts of the code was written by AI and the PCB, 3d printable case is completely hand designed by me. All code is reviewed and modified by me. This README of course is made by me.
 
 ## Possible future improvements
     -RGB lighting
