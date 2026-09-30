@@ -128,6 +128,9 @@ keyboard.matrix:
     - value_when_pressed: this is the value when the key is pressed. It is determined by the microcontroller's pull up resistor, which registers a constant HIGH/True(3.3V) until the mechanical switch is pressed and join the pin with GND, which pulls it down to Low/False(0V). This can be changed(but in most cases don't).
 keyboard.keymap: this defines what is typed when a keystroke is registered, can be changed at line 100
 
+## AI usage in this project
+Only some parts of the code was written by AI and the PCB, 3d printable case is completely hand designed by me. All code is reviewed and modified by me.
+
 ## Possible future improvements
     -RGB lighting
     -Rotary encoder slot instead of a 6th key(maybe?)
