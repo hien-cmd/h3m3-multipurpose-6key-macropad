@@ -36,12 +36,12 @@ A2 - GPIO28
 A3 - GPIO29
 
 ## Directory structure
-LICENSE(License file)
-README.md(README file)
-code.py(code)
-h3m3-case.stl(3d printable case file)
-h3m3-pcb.zip(PCB file)
-h3m3.kicad_sch(Schematic file for PCB)
+LICENSE
+README.md
+code.py
+config.json
+h3m3-case LATEST.stl
+h3m3-pcb_v2.zip
 
 ## Prerequisites
 -Has all the hardware needed
