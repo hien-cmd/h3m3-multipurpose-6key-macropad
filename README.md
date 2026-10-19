@@ -1,6 +1,7 @@
 # H3M3 - THE multi-purpose 6 key macro pad
 This is a 6 key macro pad with 6 programmable keys, 3 being hotswap mechanical switches for casual work and the other 3 being magnetic switches for with adjustable sensitivity for gaming.
-
+![here's what it looks like all together](https://github.com/hien-cmd/h3m3-multipurpose-6key-macropad/blob/d658d376e7a0116dc3358632df8af70569c9f464/Images/h3m3-front.jpeg)
+![](https://github.com/hien-cmd/h3m3-multipurpose-6key-macropad/blob/d658d376e7a0116dc3358632df8af70569c9f464/Images/h3m3-right.jpeg)
 ## Features
 - 3 hotswap mechanical switches
 - 3 interchangable magnetic switches
