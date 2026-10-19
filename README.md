@@ -2,6 +2,7 @@
 This is a 6 key macro pad with 6 programmable keys, 3 being hotswap mechanical switches for casual work and the other 3 being magnetic switches for with adjustable sensitivity for gaming.
 ![here's what it looks like all together](https://github.com/hien-cmd/h3m3-multipurpose-6key-macropad/blob/d658d376e7a0116dc3358632df8af70569c9f464/Images/h3m3-front.jpeg)
 ![](https://github.com/hien-cmd/h3m3-multipurpose-6key-macropad/blob/d658d376e7a0116dc3358632df8af70569c9f464/Images/h3m3-right.jpeg)
+
 ## Features
 - 3 hotswap mechanical switches
 - 3 interchangable magnetic switches
@@ -26,15 +27,14 @@ This is a 6 key macro pad with 6 programmable keys, 3 being hotswap mechanical s
 ## Firmware
 - code.py, built using CircuitPython and KMK
 
-## Pinout(PCB - RP2040-Zero)
-VCC - 5V
-GND - GND
-D1 - GPIO00
-D2 - GPIO01
-D3 - GPIO02
-A1 - GPIO27
-A2 - GPIO28
-A3 - GPIO29
+## Schematic
+![schematic](https://github.com/hien-cmd/h3m3-multipurpose-6key-macropad/blob/34ab6af28ea9fcbdd9a5bff66022a4171cf317ca/Images/h3m3-schematic.png)
+
+##PCB
+![pcb](https://github.com/hien-cmd/h3m3-multipurpose-6key-macropad/blob/34ab6af28ea9fcbdd9a5bff66022a4171cf317ca/Images/pcb.png)
+
+##3D-printable case
+![cad](https://github.com/hien-cmd/h3m3-multipurpose-6key-macropad/blob/0e5f8631e0c873c70abede929017d881cce7b92d/Images/h3m3-cadpicture.png)
 
 ## Prerequisites
 -Has all the hardware needed
@@ -46,8 +46,10 @@ A3 - GPIO29
 3. Solder in Hall Effect sensors so it sits on the holes in each magnetic switch slot on the PCB
 4. Put the PCB into the case
 5. Fit the 3 mechanical switches through the casing and fit the pins into the hotswap sockets, so the PCB sits where it should be, then fit the magnetic switches in
-6. Glue bottom casing with the body.
-
+6. Put the keycaps on each switch
+7. Put the upper half onto the bottom casing, you can glue it together if you want but gravity already keeps it stable, personally I don't so i can quickly fix hardware issues
+![case-assembly1](https://github.com/hien-cmd/h3m3-multipurpose-6key-macropad/blob/d7f03afb85389ab6ad2a859ced57ccf9d0e6a96e/Images/h3m3-caseassembly1.jpeg)
+![case-assembly2](https://github.com/hien-cmd/h3m3-multipurpose-6key-macropad/blob/d7f03afb85389ab6ad2a859ced57ccf9d0e6a96e/Images/h3m3-caseassembly2.jpeg)
 
 ## Firmware installation
 1. Install CircuitPython on the RP2040-Zero:
@@ -64,7 +66,7 @@ A3 - GPIO29
 M1 - a
 M2 - b
 M3 - ESC
-A1 - Z
+A1 - z
 A2 - x
 A3 - c
 
@@ -78,8 +80,8 @@ config.json has three top level sections:
 - "mechanical_keys": a list of 3 key names for the mechanical switches, in the order M1, M2, M3
 - "hall_effect": one entry per magnetic switch (GP27, GP28, GP29), each with a "key" name and, optionally, its own overrides for any of the per switch tuning values below
 - "tuning": the global defaults used by any magnetic switch that doesn't set its own override, plus a few board wide settings
-Per switch tuning
-
+  
+### Per switch tuning
 Inside a switch's entry under "hall_effect", any of these can be set individually for that switch. Leave one out and it falls back to the matching value in "tuning" instead:
 
 - "actuation_depth": how far, in volts, the voltage has to drop from that switch's own resting point before it registers as pressed. This is the main sensitivity knob, lower means a lighter, earlier press
@@ -88,7 +90,7 @@ Inside a switch's entry under "hall_effect", any of these can be set individuall
 - "rt_press_delta": with "rapid_trigger" on, how far the voltage has to push back down from the highest point reached since release before it re-presses
 - "rt_release_delta": with "rapid_trigger" on, how far the voltage has to lift back up from the deepest point reached since pressing before it releases
 - "rest_v": the resting voltage to use for that switch if "auto_calibrate" is turned off
--"reject_v": that switch's fault floor, see the warning under board wide tuning below
+- "reject_v": that switch's fault floor, see the warning under board wide tuning below
 
 ### Board wide tuning
 These live only in "tuning" and apply to every magnetic switch:
@@ -106,11 +108,12 @@ As mentioned in the properties list, rapid trigger and more advanced functions n
 3. Note the resting value of each switch at boot
 4. One by one press each magnetic switch and note the voltage when it is pressed.
 5. The difference between the resting voltage and the one where it's fully pressed is its full travel. A good "actuation_depth" value for each switch is about a third to half of that value, adjust to however you want it. Here's some reference ranges:
-- Small actuation_depth (0.05 to 0.10) meaning the key fires almost immediately, barely touching it.
-- Medium (0.15), about halfway down, good middle ground.
-- Large (0.25 and up) needs deliberate, deeper presses. 
-6. If the switches starts pressing on it's own, raise its "hysteresis" property value or the "filter_strength"(board-wide change though)
+- Small actuation_depth (0.05 to 0.10) very sensitive
+- Medium (0.15), about halfway down
+- Large (0.25 and up) deeper presses. 
+6. If the switches starts pressing on its own, remove the switches in that slot immediatly and raise its actuation depth
 7. Set "debug" back to false once you're done
+Or if you want a quicker way(however not that precise) you can just raise or lower the preset actuation depth and have a feel for it.
 
 ### Debug functions
 When "debug" is set to "true" in the config.json, it prints each magnetic switch's resting voltage at boot and then its live current voltage. This can be seen with a serial monitor such as Terminal's built in screen function to calibrate actuation depth. Leave it off if you aren't calibrating it because it does make a slightly less reactive.
@@ -126,7 +129,7 @@ Only some parts of the code was written by AI and the PCB, 3d printable case is 
 
 ## Possible future improvements
     -RGB lighting
-    -Rotary encoder slot instead of a 6th key(maybe?)
+    -Rotary encoder slot 
 
 ## License
 MIT License
