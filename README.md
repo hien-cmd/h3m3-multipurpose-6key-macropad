@@ -35,14 +35,6 @@ A1 - GPIO27
 A2 - GPIO28
 A3 - GPIO29
 
-## Directory structure
-LICENSE. 
-README.md. 
-code.py. 
-config.json. 
-h3m3-case LATEST.stl. 
-h3m3-pcb_v2.zip
-
 ## Prerequisites
 -Has all the hardware needed
 -Has the 3d printed case and the PCB
