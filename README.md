@@ -1,5 +1,6 @@
 # H3M3 - THE multi-purpose 6 key macro pad
 This is a 6 key macro pad with 6 programmable keys, 3 being hotswap mechanical switches for casual work and the other 3 being magnetic switches for with adjustable sensitivity for gaming.
+
 ![here's what it looks like all together](https://github.com/hien-cmd/h3m3-multipurpose-6key-macropad/blob/d658d376e7a0116dc3358632df8af70569c9f464/Images/h3m3-front.jpeg)
 ![](https://github.com/hien-cmd/h3m3-multipurpose-6key-macropad/blob/d658d376e7a0116dc3358632df8af70569c9f464/Images/h3m3-right.jpeg)
 
@@ -117,6 +118,10 @@ keyboard.matrix:
     - pins: this defines the pins where the mechanical switches are placed.
     - value_when_pressed: this is the value when the key is pressed. It is determined by the microcontroller's pull up resistor, which registers a constant HIGH/True(3.3V) until the mechanical switch is pressed and join the pin with GND, which pulls it down to Low/False(0V). This can be changed(but in most cases don't).
 keyboard.keymap: this defines what is typed when a keystroke is registered, can be changed at line 100
+
+##Credits
+-Keycaps made by this parametric model maker: https://makerworld.com/en/makerlab/parametricModelMaker?designId=2182165&from=model_page&modelName=Keycap_customizable_v1_template.scad&protected=true&unikey=a6cd5a4e-c0e8-4990-b4b3-d559a98cbdf8
+-Footprint for Kailh hotswap sockets: https://github.com/kiswitch/keyswitch-kicad-library
 
 ## AI usage in this project
 Only some parts of the code was written by AI primarily to fix bugs and the schematic, PCB, 3d printable case is completely hand designed by me. All code is reviewed and modified by me. This README of course is made by me.
