@@ -10,14 +10,8 @@ This is a 6 key macro pad with 6 programmable keys, 3 being hotswap mechanical s
 - Small form factor
 - Open source hardware and firmware
 
-## Hardware needed
-- Waveshare RP2040-Zero
-- 3x mechanical switches(can be 3 or 5 pin)
-- 3x magnetic switches
-- Surface-mount hotswap sockets or mill-max sockets(PCB currently only support Kailh hotswap surface mount sockets and mill max)
-- 3x OH49E Hall Effect sensors 
-- Custom PCB
-- 3D printed case
+## BOM
+![bill of materials](https://github.com/hien-cmd/h3m3-multipurpose-6key-macropad/blob/38ea11eaa024bd157dddd42bedeff9f3d32f01d2/Images/BOM.png)
 
 ## Tools needed
 - Soldering iron and a bit of solder
