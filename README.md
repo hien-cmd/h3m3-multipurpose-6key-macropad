@@ -30,10 +30,10 @@ This is a 6 key macro pad with 6 programmable keys, 3 being hotswap mechanical s
 ## Schematic
 ![schematic](https://github.com/hien-cmd/h3m3-multipurpose-6key-macropad/blob/34ab6af28ea9fcbdd9a5bff66022a4171cf317ca/Images/h3m3-schematic.png)
 
-##PCB
+## PCB
 ![pcb](https://github.com/hien-cmd/h3m3-multipurpose-6key-macropad/blob/34ab6af28ea9fcbdd9a5bff66022a4171cf317ca/Images/pcb.png)
 
-##3D-printable case
+## 3D-printable case
 ![cad](https://github.com/hien-cmd/h3m3-multipurpose-6key-macropad/blob/0e5f8631e0c873c70abede929017d881cce7b92d/Images/h3m3-cadpicture.png)
 
 ## Prerequisites
@@ -125,7 +125,7 @@ keyboard.matrix:
 keyboard.keymap: this defines what is typed when a keystroke is registered, can be changed at line 100
 
 ## AI usage in this project
-Only some parts of the code was written by AI and the PCB, 3d printable case is completely hand designed by me. All code is reviewed and modified by me. This README of course is made by me.
+Only some parts of the code was written by AI primarily to fix bugs and the schematic, PCB, 3d printable case is completely hand designed by me. All code is reviewed and modified by me. This README of course is made by me.
 
 ## Possible future improvements
     -RGB lighting
