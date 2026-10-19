@@ -15,7 +15,7 @@ This is a 6 key macro pad with 6 programmable keys, 3 being hotswap mechanical s
 - 3x mechanical switches(can be 3 or 5 pin)
 - 3x magnetic switches
 - Surface-mount hotswap sockets or mill-max sockets(PCB currently only support Kailh hotswap surface mount sockets and mill max)
-- 3x Hall Effect sesnors 
+- 3x OH49E Hall Effect sensors 
 - Custom PCB
 - 3D printed case
 
