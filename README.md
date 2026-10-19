@@ -32,7 +32,7 @@ This is a 6 key macro pad with 6 programmable keys, 3 being hotswap mechanical s
 
 ## Prerequisites
 -Has all the hardware needed
--Has the 3d printed case and the PCB
+-Has the 3d printed case, keycaps and the PCB
 
 ## Assembly instructions
 1. Solder hotswap sockets onto pcb
