@@ -124,7 +124,7 @@ keyboard.keymap: this defines what is typed when a keystroke is registered, can 
 -Footprint for Kailh hotswap sockets: https://github.com/kiswitch/keyswitch-kicad-library
 
 ## AI usage in this project
-Only some parts of the code was written by AI primarily to fix bugs and the schematic, PCB, 3d printable case is completely hand designed by me. All code is reviewed and modified by me. This README of course is made by me.
+Only some parts of the code was written by AI, primarily to fix bugs and the schematic, PCB, 3d printable case is completely hand designed by me. All code is reviewed and modified by me. This README of course is made by me.
 
 ## Possible future improvements
     -RGB lighting
